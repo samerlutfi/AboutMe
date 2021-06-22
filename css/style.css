@@ -1,2 +1,11 @@
-p{font-size: 24px;font-style: italic;background-color: lightblue;}
-h3{font-size: 45px; font-family: Fantasy;background-color: lightcoral;margin:40px;}
+ul{font-size: 20px;
+    font-style: italic;
+    background-color: lightblue;
+    list-style-type:circle;margin: 25px;
+     }
+h3{font-size: 45px; font-family: Fantasy;background-color: lightcoral;}
+h4{font-size: 20px; font-family: Fantasy;background-color: lightcoral;}
+ol{font-size: 20px;
+    font-style: italic;
+    background-color: lightblue;
+    list-style-type:decimal;margin: 25px;}
