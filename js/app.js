@@ -99,8 +99,8 @@ reask4();
 // alert('that\'s all nice to meet you '+ userName +' have a lovely day');
 
 let answer = 8;
-for (let i=1 ;i<=5 ;i++){
-  let guess = prompt('guess a number from 1 to 10');
+for (let i=1 ;i<=4 ;i++){
+  let guess = Number(prompt('guess a number from 1 to 10'));
   if(guess>answer){
     alert('your number is high try again');
   }else if(guess<answer){
@@ -111,5 +111,18 @@ for (let i=1 ;i<=5 ;i++){
   }
 }
 alert('the correct answer is 8');
+let cars=['kia','audi','bmw','fiat'];
+for (let attempt = 1; attempt <= 6 ; attempt++){
+  let answer2 =prompt('can you guess one my fav car types?').toLocaleLowerCase();
+  for (let i = 0;i < cars.length;i++){
+    if(answer2 == cars[i]){
+      alert('thats right');
+      attempt = 9;
+      break;
+    }
+  }
+}
+
+
 
 
