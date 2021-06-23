@@ -1,4 +1,5 @@
 'use strict';
+let score= 0;
 let userName = prompt('what\'s your name?');
 console.log(userName);
 alert('Hi ' + userName + ' welcome to my webisite ');
@@ -32,6 +33,7 @@ function reask1() {
   case 'n':
     //   console.log('excellent.im syrian');
     alert('excellent.im syrian');
+    score++;
     break;
   default:
     alert('please answer with y or n');
@@ -47,6 +49,7 @@ function reask2() {
   case 'y':
     //   console.log('that\'s right! keep going');
     alert('that\'s right! keep going');
+    score++;
     break;
   case 'n':
     //   console.log('wrong answer!i have finshed my study actualy');
@@ -66,6 +69,7 @@ function reask3() {
   case 'y':
     //   console.log('that\'s right!');
     alert('that\'s right!');
+    score++;
     break;
   case 'n':
     //   console.log('nope sorry.i love pets');
@@ -84,6 +88,7 @@ function reask4() {
   case 'y':
     //   console.log('that\'s right especially burgerrz');
     alert('that\'s right especially burgerrz');
+    score++;
     break;
   case 'n':
     //   console.log('it\'s ok nice to meet you');
@@ -110,6 +115,7 @@ function reask5() {
       alert('your guess is low try again');
     } else {
       alert('right answer');
+      score++;
       break;
     }
   }
@@ -125,6 +131,7 @@ function reask6() {
     for (let i = 0; i < cars.length; i++) {
       if (answer2 == cars[i]) {
         alert('thats right');
+        score++;
         attempt = 9;
         break;
       }
@@ -132,3 +139,4 @@ function reask6() {
   }
 }
 reask6();
+alert('your final score is '+score+' out of 6 thank you for playing');
