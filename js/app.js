@@ -108,7 +108,7 @@ reask4();
 let answer = 8;
 function reask5() {
   for (let i = 1; i <= 4; i++) {
-    let guess = Number(prompt('guess a number from 1 to 10'));
+    let guess = Number(prompt('guess my lucky number from 1 to 10'));
     if (guess > answer) {
       alert('your number is high try again');
     } else if (guess < answer) {
