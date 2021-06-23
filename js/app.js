@@ -96,19 +96,20 @@ function reask4() {
   }
 }
 reask4();
-alert('that\'s all nice to meet you '+ userName +' have a lovely day');
+// alert('that\'s all nice to meet you '+ userName +' have a lovely day');
 
 let answer = 8;
-for (let i=0 ;i<4 ;i++){
-  let guess = prompt('guess a number from 1 to 10')
-  if(guess>8){
+for (let i=1 ;i<=5 ;i++){
+  let guess = prompt('guess a number from 1 to 10');
+  if(guess>answer){
     alert('your number is high try again');
-  }else if(guess<8){
+  }else if(guess<answer){
     alert('your guess is low try again');
   }else{
     alert('right answer');
     break;
   }
 }
+alert('the correct answer is 8');
 
 
