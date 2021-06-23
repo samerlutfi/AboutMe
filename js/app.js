@@ -1,15 +1,15 @@
 'use strict';
 let userName = prompt('what\'s your name?');
 console.log(userName);
-alert('Hi '+userName+' welcome to my webisit ');
-function reask(){
+alert('Hi ' + userName + ' welcome to my webisite ');
+function reask() {
   let q1 = prompt('do you want to play a simple guessing game about me?(y/n)').toLowerCase();
   switch (q1) {
-  case'y':
+  case 'y':
     //   console.log('nice let\'s get started!');
     alert('nice let\'s get started!');
     break;
-  case'n':
+  case 'n':
     //   console.log('it\'s ok nice to meet you!');
     alert('it\'s ok nice to meet you');
     break;
@@ -21,15 +21,15 @@ function reask(){
 }
 reask();
 
-function reask1(){
+function reask1() {
 
   let nation = prompt('am i jordanian?(y/n)').toLowerCase();
   switch (nation) {
-  case'y':
+  case 'y':
     //   console.log('it would be my pleasure.but no im syrian');
     alert('it would be my pleasure.but no im syrian');
     break;
-  case'n':
+  case 'n':
     //   console.log('excellent.im syrian');
     alert('excellent.im syrian');
     break;
@@ -41,14 +41,14 @@ function reask1(){
 }
 reask1();
 
-function reask2(){
+function reask2() {
   let study = prompt('Have i finished my bachelor degree?(y/n)').toLowerCase();
   switch (study) {
-  case'y':
+  case 'y':
     //   console.log('that\'s right! keep going');
     alert('that\'s right! keep going');
     break;
-  case'n':
+  case 'n':
     //   console.log('wrong answer!i have finshed my study actualy');
     alert('wrong answer!i have finshed my study actualy');
     break;
@@ -60,14 +60,14 @@ function reask2(){
 }
 reask2();
 
-function reask3(){
+function reask3() {
   let pet = prompt('Do i like pets?(y/n)').toLowerCase();
   switch (pet) {
-  case'y':
+  case 'y':
     //   console.log('that\'s right!');
     alert('that\'s right!');
     break;
-  case'n':
+  case 'n':
     //   console.log('nope sorry.i love pets');
     alert('nope sorry.i love pets');
     break;
@@ -81,11 +81,11 @@ reask3();
 function reask4() {
   let food = prompt('do i like fast food?(y/n)').toLowerCase();
   switch (food) {
-  case'y':
+  case 'y':
     //   console.log('that\'s right especially burgerrz');
     alert('that\'s right especially burgerrz');
     break;
-  case'n':
+  case 'n':
     //   console.log('it\'s ok nice to meet you');
     alert('it\'s ok nice to meet you');
     break;
@@ -98,31 +98,37 @@ function reask4() {
 reask4();
 // alert('that\'s all nice to meet you '+ userName +' have a lovely day');
 
+
+
 let answer = 8;
-for (let i=1 ;i<=4 ;i++){
-  let guess = Number(prompt('guess a number from 1 to 10'));
-  if(guess>answer){
-    alert('your number is high try again');
-  }else if(guess<answer){
-    alert('your guess is low try again');
-  }else{
-    alert('right answer');
-    break;
-  }
-}
-alert('the correct answer is 8');
-let cars=['kia','audi','bmw','fiat'];
-for (let attempt = 1; attempt <= 6 ; attempt++){
-  let answer2 =prompt('can you guess one my fav car types?').toLocaleLowerCase();
-  for (let i = 0;i < cars.length;i++){
-    if(answer2 == cars[i]){
-      alert('thats right');
-      attempt = 9;
+function reask5() {
+  for (let i = 1; i <= 4; i++) {
+    let guess = Number(prompt('guess a number from 1 to 10'));
+    if (guess > answer) {
+      alert('your number is high try again');
+    } else if (guess < answer) {
+      alert('your guess is low try again');
+    } else {
+      alert('right answer');
       break;
     }
   }
+  alert('the correct answer is 8');
 }
+reask5();
 
 
-
-
+function reask6() {
+  let cars = ['kia', 'audi', 'bmw', 'fiat'];
+  for (let attempt = 1; attempt <= 6; attempt++) {
+    let answer2 = prompt('can you guess one my fav car types?').toLocaleLowerCase();
+    for (let i = 0; i < cars.length; i++) {
+      if (answer2 == cars[i]) {
+        alert('thats right');
+        attempt = 9;
+        break;
+      }
+    }
+  }
+}
+reask6();
